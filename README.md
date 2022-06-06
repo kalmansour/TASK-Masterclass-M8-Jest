@@ -26,6 +26,11 @@ Have a look at this [link](https://create-react-app.dev/docs/adding-custom-envir
    3. Open Chrome DevTools, go to Application, add a `localStorage` item, the key should be `api`, and the value should be `http://localhost:8000`.
    4. Refresh the page, and you should see some beautiful posts.
 
+## Environment Variables Bonus
+
+1. Install `concurrently` and run the BE and FE servers in one terminal window.
+   - HINT: You will need to update the scripts in `package.json`.
+
 ## Unit Test
 
 1. Create a file called `instance.spec.tsx` under `services`.
@@ -47,3 +52,11 @@ Have a look at this [link](https://create-react-app.dev/docs/adding-custom-envir
 5. Get the title of your first mocked post by using `screen.getByText` (call the variable `postTitle`).
 6. Assert that `postTitle` is in the document.
 7. Run the tests using `npm run test`, and you should pass all tests.
+
+## Snapshot Bonus
+
+Mock the resolved value to be an error, and assert that the error is being displayed on the screen.
+
+## React Bonus
+
+Get the `Go to post` button to work, without install `react-router-dom`.
