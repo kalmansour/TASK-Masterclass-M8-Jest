@@ -25,3 +25,15 @@ Have a look at this [link](https://create-react-app.dev/docs/adding-custom-envir
    2. Run the FE server in another terminal window (`npm start`).
    3. Open Chrome DevTools, go to Application, add a `localStorage` item, the key should be `api`, and the value should be `http://localhost:8000`.
    4. Refresh the page, and you should see some beautiful posts.
+
+## Unit Test
+
+1. Create a file called `instance.spec.tsx` under `services`.
+2. Export the `getApiUrl` function.
+3. Accept an optional `storage` parameter in `getApiUrl`, which is of type `Pick<Storage, "getItem">`, and have the default be `localStorage`.
+   - Use the `storage` being passed in the parameter instead of the global `localStorage` object
+4. Create a unit test for `getApiUrl`, call it `"only returns production url"`.
+5. Create an object that has a `getItem` key, which is an arrow function that returns `http://localhost:8000`
+6. Pass this object to `getApiUrl` and save the return in a variable called `apiUrl`
+7. Assert that `apiUrl` is equal to `https://api.example.com`
+8. Run `npm run test`, you should pass the test `only returns production url` and fail `renders learn react link`.
