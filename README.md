@@ -37,3 +37,13 @@ Have a look at this [link](https://create-react-app.dev/docs/adding-custom-envir
 6. Pass this object to `getApiUrl` and save the return in a variable called `apiUrl`
 7. Assert that `apiUrl` is equal to `https://api.example.com`
 8. Run `npm run test`, you should pass the test `only returns production url` and fail `renders learn react link`.
+
+## Snapshot Test
+
+1. Go to `App.spec.tsx`, and rename the test function to be `renders posts`, instead of `renders learn react link`.
+2. Mock `axios` outside of the test, then mock `axios.get`'s resolved value inside the test function, before testing anything.
+3. Make sure to mock the return value to be a list of posts.
+4. Render the `App` component using `render(<App />)`.
+5. Get the title of your first mocked post by using `screen.getByText` (call the variable `postTitle`).
+6. Assert that `postTitle` is in the document.
+7. Run the tests using `npm run test`, and you should pass all tests.
