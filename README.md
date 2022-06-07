@@ -46,19 +46,19 @@ Have a look at this [link](https://create-react-app.dev/docs/adding-custom-envir
 ## Mock Test
 
 1. Go to `App.spec.tsx`, and rename the test function to be `renders posts`, instead of `renders learn react link`.
-2. Mock `./services/posts` outside of the test, then mock `usePostQuery`'s returned value inside the test function, before testing anything.
+2. Mock `./services/posts` outside of the test, then mock `useGetPosts`'s returned value inside the test function, before testing anything.
 3. Make sure to mock the return value to be a list of posts.
 4. Render the `App` component using `render(<App />)`.
-5. Get the title of your first mocked post by using `screen.getByText` (call the variable `postTitle`).
-6. Assert that `postTitle` is in the document.
+5. Get the `name` of your first mocked post by using `screen.getByText` (call the variable `postName`).
+6. Assert that `postName` is in the document.
 7. Run the tests using `npm run test`, and you should pass all tests.
 
 ## Snapshot
 
 Use the following [article](https://jestjs.io/docs/snapshot-testing) to solve the task.
 
-1. Create a `PostLink.spec.tsx` file next to `PostList.tsx`.
-2. Create a snapshot test for `PostLink`.
+1. Create a `PostList.spec.tsx` file next to `PostList.tsx`.
+2. Create a snapshot test for `PostList`.
 
 ## React Bonus
 
