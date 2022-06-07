@@ -9,7 +9,7 @@ export type PostQuery =
   | {
       data: Post[];
       loading: false;
-      error: any;
+      error?: any;
     }
   | {
       data: undefined;
