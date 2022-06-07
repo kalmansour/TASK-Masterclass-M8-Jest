@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders posts 1`] = `
+<div>
+  <h1>
+    Posts
+  </h1>
+  <div>
+    <h2>
+      Satheesh
+    </h2>
+    <ul>
+      <li>
+        Email: 
+        Sat@mail.com
+      </li>
+      <li>
+        Address: 
+        South street
+      </li>
+    </ul>
+    <button>
+      Go to post
+    </button>
+  </div>
+  <div>
+    <h2>
+      John
+    </h2>
+    <ul>
+      <li>
+        Email: 
+        john@mail.com
+      </li>
+      <li>
+        Address: 
+        North street
+      </li>
+    </ul>
+    <button>
+      Go to post
+    </button>
+  </div>
+</div>
+`;
